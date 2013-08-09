@@ -1,0 +1,12 @@
+<table>
+  <tr><td><%= button_to '+1 year',  inc_year_clock_path %>
+      <td><%= button_to '+1 month', inc_month_clock_path %>
+      <td><%= button_to '+1 day',   inc_day_clock_path %>
+  <tr><td><%= @now.year %>
+      <td><%= @now.month %>
+      <td><%= @now.day %>
+  <tr><td><%= button_to '-1 year',  dec_year_clock_path %>
+      <td><%= button_to '-1 month', dec_month_clock_path %>
+      <td><%= button_to '-1 day',   dec_day_clock_path %>
+</table>
+
